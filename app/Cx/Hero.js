@@ -30,13 +30,13 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen w-full overflow-hidden">
       <Image
-        src="/hero-bg.png"
+        src="/banner.png"
         alt=""
         fill
         priority
         quality={100}
         unoptimized
-        className="object-cover object-center"
+        className="object-cover object-top"
         sizes="100vw"
       />
       {/* Top vignette so logo & pill nav stay readable */}
@@ -65,10 +65,10 @@ export default function Hero() {
       <Nav />
 
       {/* Bottom white fade (image polish) */}
-      <div
+      {/* <div
         className="pointer-events-none absolute inset-x-0 bottom-0 z-15 h-[min(42vh,22rem)] bg-linear-to-t from-white from-12% via-white/85 via-45% to-transparent"
         aria-hidden
-      />
+      /> */}
 
       {/* Headline block: left aligned to match reference */}
       <div
@@ -78,14 +78,11 @@ export default function Hero() {
       >
         <div className="w-full text-left">
           <p className="max-w-104 font-extrabold uppercase tracking-[0.01em] text-black text-2xl leading-[1.05] drop-shadow-[0_1px_10px_rgba(255,255,255,0.5)] sm:text-[2.05rem] md:text-[2.25rem]">
-            1 FLYER IFFO PARK GO/LIVE/PARK ANYWHERE
+          1 thinker/immunizer
+          for all info & health
           </p>
           <p className="mt-5 max-w-116 text-sm font-normal leading-relaxed text-black/85 drop-shadow-[0_1px_10px_rgba(255,255,255,0.4)] sm:text-[1.02rem]">
-            Introducing our versatile flying drone, designed to soar through the
-            skies and reach any destination with ease. Equipped with
-            cutting-edge A.I. technology, it navigates effortlessly, making it
-            perfect for exploration, photography, or delivery. Experience the
-            freedom of flight like never before!
+          Unlock smarter thinking with advanced memory technology, intuitive controls, and precision electrodes designed to enhance how you learn and think.
           </p>
         </div>
       </div>
