@@ -35,7 +35,7 @@ export default function ThinkSection() {
 
           <div className="order-1 flex justify-center md:order-2 md:justify-end">
             <Image
-              src="/ring.png"
+              src="/bg-remove-halo.png"
               alt="One Mind Halo ring"
               width={900}
               height={520}
