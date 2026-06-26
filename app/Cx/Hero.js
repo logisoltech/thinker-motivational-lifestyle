@@ -91,11 +91,11 @@ export default function Hero() {
         data-aos-delay="220"
       >
         <div className="w-full text-left">
-          <h1 className="max-w-116 text-2xl leading-[1.08] font-extrabold uppercase tracking-[0.01em] drop-shadow-[0_1px_10px_rgba(255,255,255,0.5)] sm:text-[2.05rem] md:text-[2.25rem]">
+          <h1 className="max-w-116 text-2xl leading-[1.08] font-extrabold uppercase tracking-[0.01em] drop-shadow-[0_1px_10px_rgba(255,255,255,0.5)] sm:text-[2.05rem] md:text-[2rem]">
             <span className="block text-black whitespace-nowrap">
-              1 Thinker/Immunizer for all
+              HALO - Thinker/Immunizer/Protection
             </span>
-            <span className="block text-[#007bff]">info & health</span>
+            <span className="block text-[#007bff]">for all info/health</span>
           </h1>
 
           <p className="mt-5 max-w-116 text-sm font-normal leading-relaxed text-black drop-shadow-[0_1px_10px_rgba(255,255,255,0.4)] sm:text-[1.02rem]">
