@@ -78,6 +78,26 @@ export default function Hero() {
 
       <Nav />
 
+      {/* Top-right CTA buttons (desktop) */}
+      <div
+        className="absolute right-6 top-8 z-30 hidden items-center gap-3 sm:flex lg:right-8"
+        data-aos="fade-left"
+        data-aos-delay="150"
+      >
+        <a
+          href="#invest"
+          className="inline-flex items-center justify-center rounded-full bg-[#E8B93A] px-6 py-2.5 text-sm font-bold text-black shadow-lg transition hover:bg-[#d9aa2e]"
+        >
+          Invest / Donate
+        </a>
+        <a
+          href="#crypto"
+          className="inline-flex items-center justify-center rounded-full border border-[#E8B93A] px-6 py-2.5 text-sm font-bold text-[#E8B93A] transition hover:bg-[#E8B93A] hover:text-black"
+        >
+          Buy M.D Crypto
+        </a>
+      </div>
+
       {/* Bottom white fade (image polish) */}
       {/* <div
         className="pointer-events-none absolute inset-x-0 bottom-0 z-15 h-[min(42vh,22rem)] bg-linear-to-t from-white from-12% via-white/85 via-45% to-transparent"
