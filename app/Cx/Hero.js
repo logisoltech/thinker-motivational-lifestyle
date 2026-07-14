@@ -92,7 +92,7 @@ export default function Hero() {
         </a>
         <a
           href="#crypto"
-          className="inline-flex items-center justify-center rounded-full border border-[#E8B93A] px-6 py-2.5 text-sm font-bold text-[#E8B93A] transition hover:bg-[#E8B93A] hover:text-black"
+          className="inline-flex items-center justify-center rounded-full bg-[#E8B93A] px-6 py-2.5 text-sm font-bold text-black shadow-lg transition hover:bg-[#d9aa2e]"
         >
           Buy M.D Crypto
         </a>
