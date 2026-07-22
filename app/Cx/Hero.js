@@ -71,7 +71,7 @@ export default function Hero() {
           alt="Institutional Lifestyle"
           width={400}
           height={130}
-          className="h-16 w-auto sm:h-19 md:h-20 lg:h-24"
+          className="h-20 w-auto sm:h-22 md:h-24 lg:h-28"
           priority
         />
       </a>
