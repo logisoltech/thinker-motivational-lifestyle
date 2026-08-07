@@ -10,7 +10,7 @@ const COLUMNS = [
       "Neural energy field",
       "Wireless data transfer",
     ],
-    image: "/halo-design-rework-05.png",
+    image: "/halo-design-rework-05.png?v=3",
     alt: "Halo learning features",
     text: "Info App & Capability — if you don't have time to read, just see image or text on your cell phone and download directly all wireless into your memory with our new special app. It's good enough, better than a brain. (Limitations to memory download)",
   },
@@ -21,7 +21,7 @@ const COLUMNS = [
       "Protection against viruses",
       "Germs & infection defense",
     ],
-    image: "/halo-design-rework-07.png",
+    image: "/halo-design-rework-07.png?v=3",
     alt: "Halo health shield features",
     text: "An invisible health shield wraps around you in real time — blocking viruses, germs, and infections while you focus on living smarter, healthier, and protected from everyday threats.",
   },
@@ -32,7 +32,7 @@ const COLUMNS = [
       "360° view",
       "Disarm anyone",
     ],
-    image: "/halo-design-onman-01.png",
+    image: "/halooo.png?v=3",
     alt: "Halo protection features",
     text: "Built-in personal defense with a 360° lens view and pepper spray capability — designed to help you stay aware, stay ready, and disarm threats before they reach you.",
   },
@@ -67,6 +67,7 @@ export default function MindSection() {
                   src={image}
                   alt={alt}
                   fill
+                  unoptimized
                   className="object-cover object-center"
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   priority={false}

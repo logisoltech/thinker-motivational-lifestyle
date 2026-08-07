@@ -17,35 +17,43 @@ const FEATURES = [
 export default function ThinkSection() {
   return (
     <section className="w-full bg-white py-12 sm:py-16">
-      <div className="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12">
-        <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-8 lg:gap-12">
-          <div className="order-2 text-center md:order-1 md:text-left">
-            <h2 className="text-3xl font-extrabold uppercase tracking-tight text-neutral-950 sm:text-4xl lg:text-5xl">
-              One Mind Halo
-            </h2>
-            <p className="mt-3 text-sm font-medium text-neutral-700 sm:text-base">
-              Thinker • Learner • Protector
-            </p>
-            <p className="mx-auto mt-5 max-w-md text-sm leading-relaxed text-neutral-600 md:mx-0 sm:text-base">
-              An advanced wearable concept that enhances cognitive performance,
-              supports brain activity, and provides invisible protection for a
-              healthier, smarter you.
-            </p>
-          </div>
-
-          <div className="order-1 flex justify-center md:order-2 md:justify-end">
-            <Image
-              src="/bg-remove-halo.png"
-              alt="One Mind Halo ring"
-              width={900}
-              height={520}
-              className="h-auto w-full max-w-md md:max-w-lg lg:max-w-xl"
-              priority={false}
-            />
-          </div>
+      <div className="mx-auto flex w-full max-w-7xl flex-col items-center px-5 sm:px-8 lg:px-12">
+        <div className="flex w-full flex-col items-center text-center">
+          <h2 className="text-4xl font-extrabold uppercase tracking-tight text-neutral-950 sm:text-5xl lg:text-6xl">
+            One Mind Halo
+          </h2>
+          <p className="mt-3 text-sm font-medium text-neutral-700 sm:text-base">
+            Thinker • Learner • Protector
+          </p>
+          <p className="mx-auto mt-5 max-w-xl text-sm leading-relaxed text-neutral-600 sm:text-base">
+            An advanced wearable concept that enhances cognitive performance,
+            supports brain activity, and provides invisible protection for a
+            healthier, smarter you.
+          </p>
         </div>
 
-        <ul className="mt-10 grid grid-cols-2 gap-x-4 gap-y-6 sm:grid-cols-3 sm:gap-y-8 md:mt-14 lg:grid-cols-6">
+        <div className="mt-8 flex w-full flex-row flex-wrap items-center justify-center gap-0 sm:mt-10">
+          <Image
+            src="/halo-design-rework-07-removebg-preview.png"
+            alt="Halo Thinker product view"
+            width={900}
+            height={520}
+            unoptimized
+            className="h-auto w-1/2 max-w-xs sm:max-w-sm lg:max-w-md"
+            priority={false}
+          />
+          <Image
+            src="/halo-design-rework-05-removebg-preview.png"
+            alt="Halo Thinker alternate product view"
+            width={900}
+            height={520}
+            unoptimized
+            className="h-auto w-1/2 max-w-xs sm:max-w-sm lg:max-w-md"
+            priority={false}
+          />
+        </div>
+
+        <ul className="mt-10 grid w-full grid-cols-2 gap-x-4 gap-y-6 sm:grid-cols-3 sm:gap-y-8 md:mt-14 lg:grid-cols-6">
           {FEATURES.map(({ icon: Icon, label }) => (
             <li
               key={label}

@@ -67,10 +67,11 @@ export default function LastSection() {
     <section className="w-full bg-white ">
       <div className="relative w-full">
         <Image
-          src="/banner-22.png"
+          src="/bannerrr.png?v=3"
           alt="One Mind Halo"
           width={1920}
           height={1080}
+          unoptimized
           priority={false}
           className="block h-auto w-full"
         />

@@ -11,11 +11,13 @@ const FEATURES = [
     icon: Brain,
     title: "Smarter Thinking",
     desc: "Enhance focus, memory and mental clarity.",
+    points: ["Light patterns speak to the brain and send info."],
   },
   {
     icon: ShieldPlus,
     title: "Health Protection",
     desc: "Invisible shield against viruses, germs & infections.",
+    points: ["Pepper Spray"],
   },
 ];
 
@@ -44,7 +46,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen w-full overflow-hidden">
       <Image
-        src="/banner.png"
+        src="/halo-design-onman-01.png"
         alt=""
         fill
         priority
@@ -106,7 +108,7 @@ export default function Hero() {
 
       {/* Headline block: left aligned to match reference */}
       <div
-        className="absolute left-5 top-48 z-20 w-[min(40rem,calc(100%-2rem))] sm:left-10 sm:top-52 sm:w-[min(42rem,calc(100%-3rem))] md:left-14 md:top-56 md:w-[min(44rem,calc(100%-4rem))] lg:left-20 lg:top-64 lg:w-160"
+        className="absolute left-5 top-36 z-20 w-[min(40rem,calc(100%-2rem))] sm:left-10 sm:top-40 sm:w-[min(42rem,calc(100%-3rem))] md:left-14 md:top-44 md:w-[min(44rem,calc(100%-4rem))] lg:left-20 lg:top-48 lg:w-160"
         data-aos="fade-up"
         data-aos-delay="220"
       >
@@ -120,11 +122,11 @@ export default function Hero() {
 
           <p className="mt-5 max-w-116 text-sm font-normal leading-relaxed text-black drop-shadow-[0_1px_10px_rgba(255,255,255,0.4)] sm:text-[1.02rem]">
             Experience a futuristic HALO wearable designed for smarter thinking,
-            wireless neural support, and invisible health protection.
+            wireless neural support, and invisible health, and crime protection.
           </p>
 
           <div className="mt-8 flex flex-col gap-6 sm:flex-row sm:gap-10">
-            {FEATURES.map(({ icon: Icon, title, desc }) => (
+            {FEATURES.map(({ icon: Icon, title, desc, points }) => (
               <div key={title} className="flex max-w-60 items-start gap-4">
                 <Icon
                   className="mt-0.5 h-11 w-11 shrink-0 stroke-[1.5] text-[#007bff] sm:h-12 sm:w-12"
@@ -134,9 +136,12 @@ export default function Hero() {
                   <p className="text-sm font-bold text-black sm:text-base">
                     {title}
                   </p>
-                  <p className="mt-1 text-xs leading-relaxed text-black sm:text-sm">
-                    {desc}
-                  </p>
+                  <ul className="mt-1 list-disc space-y-1 pl-4 text-xs leading-relaxed text-black sm:text-sm">
+                    <li>{desc}</li>
+                    {points.map((point) => (
+                      <li key={point}>{point}</li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             ))}
