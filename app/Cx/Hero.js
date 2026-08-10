@@ -2,13 +2,13 @@
 
 import { useEffect } from "react";
 import Image from "next/image";
-import { Brain, ShieldPlus } from "lucide-react";
+import { ShieldPlus } from "lucide-react";
 import "aos/dist/aos.css";
 import Nav from "./Nav";
 
 const FEATURES = [
   {
-    icon: Brain,
+    image: "/brain-side.png",
     title: "Smarter Thinking",
     desc: "Enhance focus, memory and mental clarity.",
     points: ["Light patterns speak to the brain and send info."],
@@ -126,12 +126,23 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-col gap-6 sm:flex-row sm:gap-10">
-            {FEATURES.map(({ icon: Icon, title, desc, points }) => (
+            {FEATURES.map(({ icon: Icon, image, title, desc, points }) => (
               <div key={title} className="flex max-w-60 items-start gap-4">
-                <Icon
-                  className="mt-0.5 h-11 w-11 shrink-0 stroke-[1.5] text-[#007bff] sm:h-12 sm:w-12"
-                  aria-hidden
-                />
+                {image ? (
+                  <Image
+                    src={image}
+                    alt=""
+                    width={80}
+                    height={80}
+                    unoptimized
+                    className="mt-0.5 h-18 w-18 shrink-0 object-contain sm:h-20 sm:w-20"
+                  />
+                ) : (
+                  <Icon
+                    className="mt-0.5 h-11 w-11 shrink-0 stroke-[1.5] text-[#007bff] sm:h-12 sm:w-12"
+                    aria-hidden
+                  />
+                )}
                 <div>
                   <p className="text-sm font-bold text-black sm:text-base">
                     {title}
