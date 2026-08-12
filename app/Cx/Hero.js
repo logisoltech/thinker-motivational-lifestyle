@@ -106,6 +106,28 @@ export default function Hero() {
         aria-hidden
       /> */}
 
+      {/* HUD visor callout */}
+      <div className="pointer-events-none absolute inset-0 z-20 hidden md:block">
+        <div className="absolute left-[39%] top-[42%] w-48 lg:left-[41%] lg:top-[43%] lg:w-56">
+          <p className="text-sm font-bold leading-snug text-black drop-shadow-[0_1px_10px_rgba(255,255,255,0.85)] lg:text-base">
+            Oled HUD Display for Internet Connection and Emails.
+          </p>
+        </div>
+
+        <svg className="absolute inset-0 size-full" aria-hidden>
+          <line
+            x1="55%"
+            y1="47%"
+            x2="62%"
+            y2="42.5%"
+            stroke="#0f172a"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+          />
+          <circle cx="62%" cy="42.5%" r="4" fill="#0f172a" />
+        </svg>
+      </div>
+
       {/* Headline block: left aligned to match reference */}
       <div
         className="absolute left-5 top-36 z-20 w-[min(40rem,calc(100%-2rem))] sm:left-10 sm:top-40 sm:w-[min(42rem,calc(100%-3rem))] md:left-14 md:top-44 md:w-[min(44rem,calc(100%-4rem))] lg:left-20 lg:top-48 lg:w-160"
