@@ -32,7 +32,7 @@ const COLUMNS = [
       "360° view",
       "Disarm anyone",
     ],
-    image: "/halooo.png?v=3",
+    image: "/haloooo.png?v=4",
     alt: "Halo protection features",
     text: "Built-in personal defense with a 360° lens view and pepper spray capability — designed to help you stay aware, stay ready, and disarm threats before they reach you.",
   },
