@@ -46,7 +46,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen w-full overflow-hidden">
       <Image
-        src="/halo-design-onman-01.png"
+        src="/halo-design-onman-02.jpg.jpeg"
         alt=""
         fill
         priority

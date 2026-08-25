@@ -34,7 +34,7 @@ export default function ThinkSection() {
 
         <div className="mt-8 flex w-full flex-row flex-wrap items-center justify-center gap-0 sm:mt-10">
           <Image
-            src="/halo-design-rework-07-removebg-preview.png"
+            src="/halo-design-rework-B-01.png"
             alt="Halo Thinker product view"
             width={900}
             height={520}
@@ -43,7 +43,7 @@ export default function ThinkSection() {
             priority={false}
           />
           <Image
-            src="/halo-design-rework-05-removebg-preview.png"
+            src="/halo-design-rework-B-02.png"
             alt="Halo Thinker alternate product view"
             width={900}
             height={520}
