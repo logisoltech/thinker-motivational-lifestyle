@@ -106,11 +106,19 @@ export default function Hero() {
         aria-hidden
       /> */}
 
-      {/* HUD visor callout */}
+      {/* Hero callouts */}
       <div className="pointer-events-none absolute inset-0 z-20 hidden md:block">
+        {/* Left: HUD visor */}
         <div className="absolute left-[39%] top-[42%] w-48 lg:left-[41%] lg:top-[43%] lg:w-56">
           <p className="text-sm font-bold leading-snug text-black drop-shadow-[0_1px_10px_rgba(255,255,255,0.85)] lg:text-base">
             Oled HUD Display for Internet Connection and Emails.
+          </p>
+        </div>
+
+        {/* Right: no cell phone needed */}
+        <div className="absolute right-[4%] top-[39%] w-40 translate-y-1 text-right lg:right-[5%] lg:top-[40%] lg:w-48">
+          <p className="text-sm font-bold leading-snug text-black drop-shadow-[0_1px_10px_rgba(255,255,255,0.85)] lg:text-base">
+            No need for cell phones
           </p>
         </div>
 
@@ -125,6 +133,17 @@ export default function Hero() {
             strokeLinecap="round"
           />
           <circle cx="62%" cy="42.5%" r="4" fill="#0f172a" />
+
+          <line
+            x1="88%"
+            y1="42%"
+            x2="75%"
+            y2="34%"
+            stroke="#0f172a"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+          />
+          <circle cx="75%" cy="34%" r="4" fill="#0f172a" />
         </svg>
       </div>
 
