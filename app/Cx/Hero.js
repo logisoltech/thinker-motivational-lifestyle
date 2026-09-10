@@ -109,9 +109,10 @@ export default function Hero() {
       {/* Hero callouts */}
       <div className="pointer-events-none absolute inset-0 z-20 hidden md:block">
         {/* Left: HUD visor */}
-        <div className="absolute left-[39%] top-[42%] w-48 lg:left-[41%] lg:top-[43%] lg:w-56">
+        <div className="absolute left-[39%] top-[42%] w-56 lg:left-[41%] lg:top-[43%] lg:w-64">
           <p className="text-sm font-bold leading-snug text-black drop-shadow-[0_1px_10px_rgba(255,255,255,0.85)] lg:text-base">
-            Oled HUD Display for Internet Connection and Emails.
+            Oled HUD Display for Internet Connection and Emails. Auto focus
+            ability, translation and speaker
           </p>
         </div>
 
