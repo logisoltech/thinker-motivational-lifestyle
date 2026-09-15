@@ -111,8 +111,8 @@ export default function Hero() {
         {/* Left: HUD visor */}
         <div className="absolute left-[39%] top-[42%] w-56 lg:left-[41%] lg:top-[43%] lg:w-64">
           <p className="text-sm font-bold leading-snug text-black drop-shadow-[0_1px_10px_rgba(255,255,255,0.85)] lg:text-base">
-            Oled HUD Display for Internet Connection and Emails. <br/>Auto focus
-            ability, translation and speaker
+            Oled HUD Display for Internet Connection and Emails. <br/>Auto focus lens
+            ability <br/>(No Glasses needed), translation and speaker
           </p>
         </div>
 

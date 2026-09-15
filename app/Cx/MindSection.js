@@ -4,7 +4,7 @@ const COLUMNS = [
   {
     title: "Learning",
     bullets: [
-      "Futuristic Halo",
+      "Translation & Speakers",
       "One Mind Thinker",
       "Cognitive performance",
       "Neural energy field",
