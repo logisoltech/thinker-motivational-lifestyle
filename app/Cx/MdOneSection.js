@@ -30,7 +30,7 @@ export default function MdOneSection() {
           </p>
 
           <h3 className="mt-8 text-2xl leading-[1.1] font-extrabold uppercase tracking-tight text-neutral-900 sm:text-[1.75rem]">
-            Learning Process
+            Learning Process Is Now Easy
           </h3>
 
           <p className="mt-4 text-base leading-relaxed text-neutral-700">

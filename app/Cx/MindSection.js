@@ -4,11 +4,11 @@ const COLUMNS = [
   {
     title: "Learning",
     bullets: [
-      "Translation & Speakers",
       "One Mind Thinker",
       "Cognitive performance",
       "Neural energy field",
       "Wireless data transfer",
+      "Translation & Speakers",
     ],
     image: "/halo-design-rework-05.png?v=3",
     alt: "Halo learning features",
