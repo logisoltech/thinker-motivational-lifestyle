@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { ShieldPlus } from "lucide-react";
 import "aos/dist/aos.css";
@@ -21,7 +21,12 @@ const FEATURES = [
   },
 ];
 
+const goldButtonClass =
+  "inline-flex items-center justify-center rounded-full bg-[#E8B93A] px-6 py-2.5 text-base font-bold text-black shadow-lg transition hover:bg-[#d9aa2e]";
+
 export default function Hero() {
+  const [contactOpen, setContactOpen] = useState(false);
+
   useEffect(() => {
     let mounted = true;
 
@@ -42,6 +47,20 @@ export default function Hero() {
       mounted = false;
     };
   }, []);
+
+  useEffect(() => {
+    if (!contactOpen) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const onKey = (e) => {
+      if (e.key === "Escape") setContactOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = prev;
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [contactOpen]);
 
   return (
     <section className="relative min-h-screen w-full overflow-hidden">
@@ -82,23 +101,65 @@ export default function Hero() {
 
       {/* Top-right CTA buttons (desktop) */}
       <div
-        className="absolute right-6 top-8 z-30 hidden items-center gap-3 sm:flex lg:right-8"
+        className="absolute right-6 top-8 z-30 hidden flex-col items-end gap-2 sm:flex lg:right-8"
         data-aos="fade-left"
         data-aos-delay="150"
       >
-        <a
-          href="#invest"
-          className="inline-flex items-center justify-center rounded-full bg-[#E8B93A] px-6 py-2.5 text-base font-bold text-black shadow-lg transition hover:bg-[#d9aa2e]"
-        >
-          Invest / Donate
-        </a>
-        <a
-          href="#crypto"
-          className="inline-flex items-center justify-center rounded-full bg-[#E8B93A] px-6 py-2.5 text-base font-bold text-black shadow-lg transition hover:bg-[#d9aa2e]"
-        >
-          Buy M.D Crypto
-        </a>
+        <div className="flex items-center gap-3">
+          <a href="#invest" className={goldButtonClass}>
+            Invest / Donate
+          </a>
+          <a href="#crypto" className={goldButtonClass}>
+            Buy M.D Crypto
+          </a>
+        </div>
+        <div className="flex items-center gap-3">
+          <button
+            type="button"
+            onClick={() => setContactOpen(true)}
+            className={goldButtonClass}
+          >
+            Contact
+          </button>
+          <a href="#financing" className={goldButtonClass}>
+            Financing Available
+          </a>
+        </div>
       </div>
+
+      {contactOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 backdrop-blur-sm"
+          onClick={() => setContactOpen(false)}
+          role="presentation"
+        >
+          <div
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="contact-modal-title"
+            className="relative w-full max-w-lg rounded-2xl bg-white p-8 shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              type="button"
+              onClick={() => setContactOpen(false)}
+              className="absolute right-4 top-4 text-2xl leading-none text-neutral-500 transition hover:text-black"
+              aria-label="Close"
+            >
+              ×
+            </button>
+            <h2
+              id="contact-modal-title"
+              className="pr-8 text-lg font-bold uppercase tracking-tight text-neutral-900"
+            >
+              Contact
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-neutral-700">
+              M.D. MOTIVATIONAL ENETERPRISES LLC – LOCATION 56 ST. NY. NY. 10019
+            </p>
+          </div>
+        </div>
+      )}
 
       {/* Bottom white fade (image polish) */}
       {/* <div
@@ -109,16 +170,16 @@ export default function Hero() {
       {/* Hero callouts */}
       <div className="pointer-events-none absolute inset-0 z-20 hidden md:block">
         {/* Left: HUD visor */}
-        <div className="absolute left-[39%] top-[42%] w-56 lg:left-[41%] lg:top-[43%] lg:w-64">
-          <p className="text-sm font-bold leading-snug text-black drop-shadow-[0_1px_10px_rgba(255,255,255,0.85)] lg:text-base">
+        <div className="absolute left-[39%] top-[42%] w-60 lg:left-[41%] lg:top-[43%] lg:w-72">
+          <p className="text-base font-bold leading-snug text-black drop-shadow-[0_1px_10px_rgba(255,255,255,0.85)] lg:text-lg">
             Oled HUD Display for Internet Connection and Emails. <br/>Auto focus lens
             ability <br/>(No Glasses needed), translation and speaker
           </p>
         </div>
 
         {/* Right: no cell phone needed */}
-        <div className="absolute right-[4%] top-[39%] w-40 translate-y-1 text-right lg:right-[5%] lg:top-[40%] lg:w-48">
-          <p className="text-sm font-bold leading-snug text-black drop-shadow-[0_1px_10px_rgba(255,255,255,0.85)] lg:text-base">
+        <div className="absolute right-[4%] top-[39%] w-44 translate-y-1 text-right lg:right-[5%] lg:top-[40%] lg:w-52">
+          <p className="text-base font-bold leading-snug text-black drop-shadow-[0_1px_10px_rgba(255,255,255,0.85)] lg:text-lg">
             No need for cell phones
           </p>
         </div>
