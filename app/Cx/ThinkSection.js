@@ -39,7 +39,7 @@ export default function ThinkSection() {
             width={900}
             height={520}
             unoptimized
-            className="h-auto w-1/2 max-w-xs sm:max-w-sm lg:max-w-md"
+            className="h-auto w-1/2 max-w-md sm:max-w-lg lg:max-w-xl"
             priority={false}
           />
           <Image
@@ -48,7 +48,7 @@ export default function ThinkSection() {
             width={900}
             height={520}
             unoptimized
-            className="h-auto w-1/2 max-w-xs sm:max-w-sm lg:max-w-md"
+            className="h-auto w-1/2 max-w-md sm:max-w-lg lg:max-w-xl"
             priority={false}
           />
         </div>
