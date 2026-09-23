@@ -170,7 +170,7 @@ export default function Hero() {
       {/* Hero callouts */}
       <div className="pointer-events-none absolute inset-0 z-20 hidden md:block">
         {/* Left: HUD visor */}
-        <div className="absolute left-[39%] top-[42%] w-60 lg:left-[41%] lg:top-[43%] lg:w-72">
+        <div className="absolute left-[37.5%] top-[42%] w-60 lg:left-[39.5%] lg:top-[43%] lg:w-72">
           <p className="text-base font-bold leading-snug text-black drop-shadow-[0_1px_10px_rgba(255,255,255,0.85)] lg:text-lg">
             Oled HUD Display for Internet Connection and Emails. <br/>Auto focus lens
             ability <br/>(No Glasses needed), <br/>translation and speaker
@@ -186,7 +186,7 @@ export default function Hero() {
 
         <svg className="absolute inset-0 size-full" aria-hidden>
           <line
-            x1="55%"
+            x1="53.5%"
             y1="47%"
             x2="62%"
             y2="42.5%"
