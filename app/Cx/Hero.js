@@ -173,7 +173,7 @@ export default function Hero() {
         <div className="absolute left-[39%] top-[42%] w-60 lg:left-[41%] lg:top-[43%] lg:w-72">
           <p className="text-base font-bold leading-snug text-black drop-shadow-[0_1px_10px_rgba(255,255,255,0.85)] lg:text-lg">
             Oled HUD Display for Internet Connection and Emails. <br/>Auto focus lens
-            ability <br/>(No Glasses needed), translation and speaker
+            ability <br/>(No Glasses needed), <br/>translation and speaker
           </p>
         </div>
 
