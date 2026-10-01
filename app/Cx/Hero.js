@@ -216,14 +216,14 @@ export default function Hero() {
         data-aos-delay="220"
       >
         <div className="w-full text-left">
-          <h1 className="max-w-116 text-2xl leading-[1.08] font-extrabold uppercase tracking-[0.01em] drop-shadow-[0_1px_10px_rgba(255,255,255,0.5)] sm:text-[2.05rem] md:text-[2rem]">
+          <h1 className="max-w-116 text-xl leading-[1.08] font-extrabold uppercase tracking-[0.01em] drop-shadow-[0_1px_10px_rgba(255,255,255,0.5)] sm:text-[1.85rem] md:text-[1.8rem]">
             <span className="block text-black whitespace-nowrap">
-              HALO - Thinker/Immunizer/Protection
+              MD1 HALO Thinker/Immunizer/Protection
             </span>
             <span className="block text-[#007bff]">for all info/health</span>
           </h1>
 
-          <p className="mt-5 max-w-116 text-sm font-normal leading-relaxed text-black drop-shadow-[0_1px_10px_rgba(255,255,255,0.4)] sm:text-[1.02rem]">
+          <p className="mt-5 max-w-116 text-xs font-normal leading-relaxed text-black drop-shadow-[0_1px_10px_rgba(255,255,255,0.4)] sm:text-[0.95rem]">
             Experience a futuristic HALO wearable designed for smarter thinking,
             wireless neural support, and invisible health, and crime protection.
           </p>
